@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket Scoreboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #scoreboard {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        #scoreboard h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Scoreboard</h1>
+    <div id="scoreboard">
+        <h2>Match Details</h2>
+        <p>Team A: <span id="team-a-name"></span></p>
+        <p>Team B: <span id="team-b-name"></span></p>
+        <p>Match Date: <span id="match-date"></span></p>
+        
+        <h2>Scorecard</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Innings</th>
+                    <th>Batsman</th>
+                    <th>Runs</th>
+                    <th>Balls</th>
+                    <th>Fours</th>
+                    <th>Sixes</th>
+                </tr>
+            </thead>
+            <tbody id="scorecard-table">
+                <!-- scorecard data will be inserted here -->
+            </tbody>
+        </table>
+        
+        <h2>Live Score</h2>
+        <p id="live-score"></p>
+        
+    </div>
+    
+</body>
+</html>
